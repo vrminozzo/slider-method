@@ -1,0 +1,9 @@
+    valueChangeSliderDayTest = (value: number[]): void => {
+
+        const finalValue = value[0] - (value[0] % 100);
+
+        this.setState({
+            selectValueDay: finalValue,
+            sliderValueDay: value[0],
+        });
+    }
